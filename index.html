@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelekIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="" class="logo">MelekIT</a>
+        <ul class="nav-links">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#programs">Program</a></li>
+            <li><a href="#informasi">Informasi</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <!-- <li><a href="#testimoni">Testimoni</a></li> -->
+            <li class="search-container">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton" type="submit"><i class="bi bi-search"></i></button>
+            </li>
+        </ul>
+        <ul class="nav-actions">
+            <li><a href="login.html" id="loginLink">Login</a></li>
+            <li><a href="register.html" id="registerLink">Register</a></li>
+            <li id="userDropdown" style="display:none;">
+                <a href="#" id="userDisplay">User</a>
+                <ul id="dropdownMenu">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#" id="logoutButton">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="profil">
+        <h2>Tentang Kami</h2>
+        <img src="images/melekit.jpg" alt="Logo MelekIT" width="200" height="200">
+        <p>
+            MelekIT adalah lembaga pelatihan kerja yang didedikasikan untuk mempersiapkan individu agar siap menghadapi
+            tantangan di dunia teknologi informasi (IT).
+            Dengan kurikulum yang dirancang khusus untuk memenuhi kebutuhan industri IT, MelekIT menawarkan program
+            pelatihan yang komprehensif dan relevan, mencakup
+            berbagai disiplin ilmu, mulai dari web development dan data science.
+        </p>
+    </section>
+
+    <section id="programs">
+        <h2>Program Pelatihan</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Web Development</h3>
+                <img src="images/Gambar_Webdev.jpg" alt="Gambar Web Development" />
+                <p>Pelatihan membuat website dari dasar hingga mahir dengan berbagai teknologi terkini.</p>
+                <a href="detail_webdev.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="card">
+                <h3>Data Science</h3>
+                <img src="images/Gambar_DS.jpg" alt="Gambar Data Science" />
+                <p>Pelatihan analisis data dan machine learning untuk menguasai analisis data dan teknik lanjutan.</p>
+                <a href="detail_data_science.html" class="btn">Lihat Detail</a>
+            </div>
+            <div class="card">
+                <h3>UI & UX Design</h3>
+                <img src="images/Gambar UI&UX.jpg" alt="Gambar UI UX Design" />
+                <p>Pelatihan tentang desain antarmuka pengguna dan pengalaman pengguna untuk membuat produk yang menarik
+                    dan mudah digunakan.</p>
+                <a href="detail_ui_ux.html" class="btn">Lihat Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="informasi">
+        <h2>Informasi Pelatihan</h2>
+        <p>Cek jadwal pelatihan terbaru dan pastikan Anda tidak ketinggalan kesempatan untuk bergabung.</p>
+    </section>
+
+    <section id="berita">
+        <h2>Berita dan Artikel</h2>
+
+        <label for="kategori">Kategori</label>
+        <select id="kategori" onchange="filterBerita()">
+            <option value="semua">Semua</option>
+            <option value="pelatihan">Pelatihan</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-science">Data Science</option>
+        </select>
+
+        <div id="artikel-list">
+            <article data-kategori="pelatihan">
+                <h3>5 Manfaat Mengikuti Pelatihan Profesional</h3>
+                <p>
+                    Mengikuti pelatihan profesional dapat memberikan banyak manfaat, mulai dari peningkatan keterampilan
+                    hingga peluang karir yang lebih baik. Dalam artikel ini, kami membahas lima manfaat utama dari
+                    mengikuti pelatihan profesional dan bagaimana hal itu dapat membantu Anda
+                    berkembang di dunia kerja. <a href="">Baca selengkapnya....</a>
+                </p>
+            </article>
+
+            <article data-kategori="web-development">
+                <h3>Kenali Teknologi Terbaru dalam Web Development</h3>
+                <p>
+                    Dunia web development selalu berkembang dengan cepat. Teknolog terbaru seperti framework Javascript
+                    dan CSS Grid Layout memungkinkan pengembangan website yang lebih responsif dan interaktif.
+                    Artikel ini akan memberikan Anda gambaran tentang teknologi terbaru yang perlu
+                    Anda pelajari. <a href="">Baca selengkapnya....</a>
+                </p>
+            </article>
+
+            <article data-kategori="data-science">
+                <h3>Sukses di Era Digital: Mengapa Data Science Penting?</h3>
+                <p>
+                    Data Science menjadi salah satu keterampilan yang paling dicari di era digital ini. Dengan
+                    kemampuan untuk menganalisi dan menginterpretasi data, Anda bisa membantu perusahaan dalam
+                    mengambil keputusan yang lebih baik. Artikel ini menjelaskan pentingnya data science dan
+                    bagaimana Anda bisa memulai karir di bidang ini. <a href="">Baca selengkapnya....</a>
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="galeri" id="galeriImages">
+        <h2>Galeri Foto</h2>
+        <div class="galeri-images" id="galeriImages">
+            <img src="images/Gambar 1.jpg" alt="Gambar 1" />
+            <img src="images/Gambar 2.jpg" alt="Gambar 2" />
+            <img src="images/Gambar 4.jpg" alt="Gambar 3" />
+            <img src="images/Gambar 3.jpg" alt="Gambar 4" />
+        </div>
+        <span class="prev" onclick="slideLeft()">&#10094</span>
+        <div class="next" onclick="slideRight()">&#10095</div>
+    </section>
+
+    <section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-about">
+                    <img src="images/melekit.jpg" alt="logo" class="logo">
+                    <p>
+                        MelekIT dan produk pelatihan ini didukung oleh riset dan pengembangan, sumber daya pengajar,
+                        media pembelajaran, dan inovasi metode pembelajaran berbasis digital.
+                    </p>
+                </div>
+                <div class="footer-menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#profil">Profil</a></li>
+                        <li><a href="#programs">Program</a></li>
+                        <li><a href="#informasi">Informasi</a></li>
+                        <li><a href="#berita">Berita</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                    </ul>
+                </div>
+                <div class="footer-kontak">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <p>melekIT@gmail.com</p>
+                        <p><i class="bi bi-telephone"></i> : 0815-1093-9427</p>
+                        <p><i class="bi bi-geo-alt"></i> : Jl. Veteran No. 56, Jakarta Selatan, Indonesia</p>
+
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2024 - All rights reserved by MelekIT</p>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
