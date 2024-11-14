@@ -1,1 +1,3 @@
 # web_lembaga_pelatihan
+
+Saya baru saja menyelesaikan program Virtual Intership PBI divisi Web Developer dari luarsekolah. Selama mengikuti program ini, saya diberikan materi tentang website dan tools-tools untuk membuat website. Setiap minggunya saya dan peserta lainnya diberikan tugas untuk membuat atau mengembangkan website tentang lembaga pelatihan sesuai idenya. Disini saya membuat website tentang lembaga pelatihan yang ada di pikiran saya. Saya membuat website dengan nama melekIT. Saya menggunakan HTML, CSS, dan Javascript untuk membuat website ini. Dan bantuan AI chatgpt untuk membuat tampilan / layout website dan membuat program Javascript agar website lebih dinamis. Hehe
