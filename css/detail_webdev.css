@@ -1,0 +1,78 @@
+/* Reset beberapa gaya default */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Atur gaya dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Gaya untuk container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk card */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Gaya untuk gambar */
+.detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    text-align: justify;
+}
+
+/* Gaya untuk judul card */
+.card-title {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk teks card */
+.card-text {
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk list */
+.card ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
